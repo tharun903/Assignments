@@ -8,29 +8,22 @@ public class NestedSwitch {
 		String dept = sc.next();
 		
 		switch(empId) {
-		case 20011:
-			System.out.println("Name : Tharun");
-			break;
-		case 20022:
-			System.out.println("Name : Sai");
-			break;
-		case 20023:
-			System.out.println("Name : Somu");
-			switch(dept) {
-			case "IT":
-				System.out.println("Department : IT");
-				break;
-			case "Managementdept":
-				System.out.println("Department : Management dept");
-				break;
-			default:
-				System.out.println("Please re-check the department");
-			}
-			break;
-		default:
-			System.out.println("Invalid number");
-		}
+		case 20011 -> System.out.println("Name : Tharun");
+		case 20022 -> System.out.println("Name : Sai");
+		case 20023 -> {
+	        System.out.println("Name : Somu");
 
+	        switch (dept) {
+	            case "IT" -> System.out.println("Department : IT");
+	            case "Managementdept" -> 
+	                System.out.println("Department : Management dept");
+	            default -> 
+	                System.out.println("Please re-check the department");
+	        }
+	    }
+
+	    default -> System.out.println("Invalid number");
+	}
 	}
 
 }
