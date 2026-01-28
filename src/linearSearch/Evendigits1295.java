@@ -4,7 +4,7 @@ public class Evendigits1295 {
 
 	public static void main(String[] args) {
 		int[] arr = {223,34,3455,8,9};
-		int ans = digits2(7668);
+		int ans = digits2(76);
 		System.out.println(ans);
 
 	}
